@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>GHOREO – Host Trust | SaaS for Dhaka Hosts</title>
-    
+
     <!-- Primary Meta Tags -->
     <meta name="title" content="GHOREO – Host Trust | SaaS for Dhaka Hosts">
     <meta name="description" content="We run apartments in Dhaka. Built a tool to automate bookings, resolve disputes, and pay hosts directly. Join early access.">
@@ -13,33 +13,33 @@
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
     <meta name="revisit-after" content="7 days">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ghoreo.com/">
     <meta property="og:title" content="GHOREO – Host Trust | SaaS for Dhaka Hosts">
     <meta property="og:description" content="We run apartments in Dhaka. Built a tool to automate bookings, resolve disputes, and pay hosts directly. Join early access.">
     <meta property="og:image" content="https://ghoreo.com/Og-image.jpg">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://ghoreo.com/">
     <meta property="twitter:title" content="GHOREO – Host Trust | SaaS for Dhaka Hosts">
     <meta property="twitter:description" content="We run apartments in Dhaka. Built a tool to automate bookings, resolve disputes, and pay hosts directly. Join early access.">
     <meta property="twitter:image" content="https://ghoreo.com/Og-image.jpg">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://ghoreo.com/">
-    
+
     <!-- Geo tags for Dhaka -->
     <meta name="geo.region" content="BD-13">
     <meta name="geo.placename" content="Dhaka">
     <meta name="geo.position" content="23.8103;90.4125">
     <meta name="ICBM" content="23.8103, 90.4125">
-    
+
     <!-- Optional theme color for browser UI -->
     <meta name="theme-color" content="#003C32">
-    
+
     <!-- Favicon / Icons (all in root) -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -49,12 +49,23 @@
     <!-- Optional extra Android Chrome icons (for direct linking) -->
     <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-    
+
     <!-- Font Awesome 6 (free) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Google Font: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+
+    <!-- SEO FIX: Google Analytics 4
+         Replace G-XXXXXXXXXX (both occurrences below) with your real Measurement ID.
+         Find it at: analytics.google.com → Admin → Data Streams → your web stream. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
     <style>
         /* ---------- (All CSS remains exactly as before) ---------- */
         * {
@@ -448,9 +459,27 @@
                 font-size: 16px;
             }
         }
+
+        /* SEO FIX: Hides H1 from visitors but keeps it readable by Google */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            white-space: nowrap;
+            border: 0;
+        }
     </style>
 </head>
 <body>
+
+    <!-- SEO FIX: H1 — invisible to visitors, signals page topic to Google.
+         Rule: one H1 per page. Design is completely unchanged. -->
+    <h1 class="visually-hidden">GHOREO – Apartment Host Management Platform for Dhaka</h1>
+
     <div class="container">
 
         <!-- CHANGE 1: Header now shows only the security label. -->
@@ -464,9 +493,10 @@
         <!-- Founder intro (unchanged) -->
         <div class="intro-chip">
             <i class="fas fa-users" style="font-size: 28px; color: #003C32;"></i>
-            <div class="intro-text">
+            <!-- SEO FIX: div → h2. CSS font-size:17px and font-weight:400 override browser h2 defaults. No visual change. -->
+            <h2 class="intro-text">
                 We run apartments in Dhaka, just like you. We've faced late payments, miscommunication, and the chaos of hosting. So we built something better.
-            </div>
+            </h2>
             <div class="verified-badge">
                 <i class="fas fa-check-circle"></i> Hosts like you
             </div>
@@ -482,7 +512,8 @@
 
         <!-- CHANGE 3: Story section moved up — now sits before features and VC card. -->
         <div class="story-section">
-            <div class="story-title">A mistake that changed everything.</div>
+            <!-- SEO FIX: div → h2. No visual change. -->
+            <h2 class="story-title">A mistake that changed everything.</h2>
             <div class="story-text">
                 A guest once arrived to find others in what they thought was a private apartment. We had not communicated clearly. It was on us.
             </div>
@@ -500,22 +531,23 @@
         <div class="features-grid">
             <div class="feature-card">
                 <i class="fas fa-calendar-plus feature-icon"></i>
-                <div class="feature-title">Custom booking now</div>
+                <!-- SEO FIX: div → h3. No visual change. -->
+                <h3 class="feature-title">Custom booking now</h3>
                 <div class="feature-desc">Create direct bookings for walk ins and WhatsApp guests in seconds.</div>
             </div>
             <div class="feature-card">
                 <i class="fas fa-gavel feature-icon"></i>
-                <div class="feature-title">Dispute resolution</div>
+                <h3 class="feature-title">Dispute resolution</h3>
                 <div class="feature-desc">Fair, fast mediation between hosts and guests when issues arise.</div>
             </div>
             <div class="feature-card">
                 <i class="fas fa-bolt feature-icon"></i>
-                <div class="feature-title">Money directly to you</div>
+                <h3 class="feature-title">Money directly to you</h3>
                 <div class="feature-desc">Funds go straight into your account. No holding, no delays.</div>
             </div>
             <div class="feature-card">
                 <i class="fas fa-sitemap feature-icon"></i>
-                <div class="feature-title">Structured workflow</div>
+                <h3 class="feature-title">Structured workflow</h3>
                 <div class="feature-desc">Organise direct, walk in, and WhatsApp customers in one simple flow.</div>
             </div>
         </div>
@@ -526,8 +558,9 @@
         <div class="vc-card">
             <div class="vc-body">
                 <div>
-                    <div class="vc-name">Jamal Uddin Ahmed</div>
-                    <div class="vc-title">Officer in Charge, SAARC Development Fund · Thimphu</div>
+                    <!-- SEO FIX: divs → h2/h3. No visual change. -->
+                    <h2 class="vc-name">Jamal Uddin Ahmed</h2>
+                    <h3 class="vc-title">Officer in Charge, SAARC Development Fund · Thimphu</h3>
                 </div>
                 <div class="vc-quote">
                     "I experienced GHOREO's service firsthand as a guest. The care and hospitality stood out."
@@ -543,9 +576,10 @@
 
         <!-- Bridge + chips (unchanged) -->
         <div class="bridge-section">
-            <div class="bridge-text">
+            <!-- SEO FIX: div → h2. No visual change. -->
+            <h2 class="bridge-text">
                 We built GHOREO around the things we wished we had as hosts. Simple tools that actually help.
-            </div>
+            </h2>
             <div class="feature-chips">
                 <span class="chip"><i class="fas fa-coins"></i> Instant payouts</span>
                 <span class="chip"><i class="fas fa-user-check"></i> Verified guests</span>
@@ -587,5 +621,6 @@
         document.addEventListener('DOMContentLoaded', adjustBodyPadding);
         window.addEventListener('resize', adjustBodyPadding);
     </script>
+
 </body>
 </html>
