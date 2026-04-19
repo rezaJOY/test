@@ -85,25 +85,6 @@ This repository is deployed via GitHub Pages at [ghoreo.com](https://ghoreo.com)
 3. Changes go live automatically in 30-60 seconds
 4. Check deployment status: Settings -> Pages
 
-### Alternative: Deploy to Another Host
-
-If moving to a different hosting provider:
-
-**Netlify:**
-- Connect GitHub repo
-- Build command: Leave empty
-- Publish directory: `/`
-
-**Cloudflare Pages:**
-- Connect GitHub repo
-- Framework preset: None
-- Build command: Leave empty
-- Build output directory: `/`
-
-**Vercel:**
-- Import GitHub repo
-- Framework preset: Other
-- Build settings: Default
 
 ## Verification & Testing
 
@@ -133,12 +114,6 @@ Before going live, test the following:
 3. Clear browser cache
 4. Wait 2-3 minutes for CDN propagation
 
-### Custom Domain Not Working
-
-1. Verify DNS records at Namecheap (Advanced DNS)
-2. Check GitHub Pages settings (Custom domain field should show green checkmark)
-3. Wait 24-48 hours for DNS propagation (usually faster)
-4. Use [DNS Checker](https://dnschecker.org) to verify propagation
 
 ### HTTPS Not Enabled
 
@@ -190,8 +165,8 @@ Unauthorized copying, distribution, modification, or use of this code without wr
 - Creating derivative works
 - Distributing the code to third parties
 
-For licensing inquiries, contact: info@ghoreo.com
+For any inquiries, contact: info@ghoreo.com
 
 ---
 
-**Built with care by the GHOREO team** | Empowering hosts in Dhaka since 2026
+**Built with care by the GHOREO** | Empowering hosts in Dhaka since 2026
