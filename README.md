@@ -78,23 +78,6 @@ This repository is deployed via GitHub Pages at [ghoreo.com](https://ghoreo.com)
 3. Custom domain: `ghoreo.com`
 4. Enforce HTTPS: Enabled
 
-#### DNS Configuration at Namecheap
-
-**A Records (for root domain ghoreo.com):**
-
-Add 4 A Records pointing to GitHub Pages servers. Get the current IP addresses from [GitHub's official documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain).
-
-```
-Type: A Record | Host: @ | Value: [GitHub Pages IP 1]
-Type: A Record | Host: @ | Value: [GitHub Pages IP 2]
-Type: A Record | Host: @ | Value: [GitHub Pages IP 3]
-Type: A Record | Host: @ | Value: [GitHub Pages IP 4]
-```
-
-**CNAME Record (for www.ghoreo.com):**
-```
-Type: CNAME | Host: www | Value: rezajoy.github.io
-```
 
 #### Making Updates
 1. Edit files directly on GitHub (click pencil icon) or push from local
@@ -196,7 +179,7 @@ This is a proprietary business repository. External contributions are not accept
 
 ## License & Copyright
 
-© 2024-2025 **M/s. GHOREO**. All rights reserved.
+© 2024-2026 **M/s. GHOREO**. All rights reserved.
 
 This repository is proprietary to GHOREO, a registered business entity operating under trade license in Dhaka, Bangladesh. 
 
@@ -211,4 +194,4 @@ For licensing inquiries, contact: info@ghoreo.com
 
 ---
 
-**Built with care by the GHOREO team** | Empowering hosts in Dhaka since 2024
+**Built with care by the GHOREO team** | Empowering hosts in Dhaka since 2026
