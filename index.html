@@ -1,717 +1,1400 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>GHOREO - Property Management Software for Dhaka Hosts</title>
+<meta charset="UTF-8">
 
-    <!-- Primary Meta Tags -->
-    <meta name="description" content="Built by Dhaka hosts for Dhaka hosts. Manage bookings, resolve disputes, and receive instant payouts. Reserve your early access host profile - free, no payment required.">
-    <meta name="author" content="GHOREO">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="en">
+<!-- === SEO META === -->
+<title>GHOREO - Hotel Guest Management &amp; HBMS Compliance Software for Dhaka Hosts</title>
+<meta name="description" content="GHOREO helps Dhaka small hotel owners (&lt;40 rooms) manage walk-in and WhatsApp bookings, guest verification, and HBMS police compliance reporting in one simple system. Built for real front desk operations.">
+<meta name="keywords" content="HBMS Bangladesh, hotel guest registration system, Dhaka hotel software, small hotel management system, walk-in booking software Bangladesh, guest verification software, police compliance hotel Bangladesh, hotel front desk software, WhatsApp booking system hotel, NID verification hotel Bangladesh">
+<meta name="author" content="Ghoreo">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ghoreo.com/">
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://ghoreo.com/">
+<!-- Open Graph -->
+<meta property="og:title" content="GHOREO - Hotel Guest Management &amp; HBMS Compliance for Dhaka Hosts">
+<meta property="og:description" content="Manage bookings, verify guests, and submit HBMS police compliance reports instantly. Built for small hotels in Dhaka handling walk-ins and WhatsApp guests.">
+<meta property="og:image" content="https://ghoreo.com/Og-image.jpg">
+<meta property="og:url" content="https://ghoreo.com">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_BD">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ghoreo.com/">
-    <meta property="og:title" content="GHOREO - Property Management Software for Dhaka Hosts">
-    <meta property="og:description" content="Built by Dhaka hosts for Dhaka hosts. Manage bookings, resolve disputes, and receive instant payouts. Reserve your early access host profile - free.">
-    <meta property="og:image" content="https://ghoreo.com/Og-image.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:site_name" content="GHOREO">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GHOREO - HBMS Compliance &amp; Hotel Management for Dhaka Hosts">
+<meta name="twitter:description" content="Walk-in bookings, guest verification, and instant HBMS submission for small hotels in Dhaka. Simple, fast, compliant.">
+<meta name="twitter:image" content="https://ghoreo.com/Og-image.jpg">
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://ghoreo.com/">
-    <meta name="twitter:title" content="GHOREO - Apartment Management Software for Dhaka Hosts">
-    <meta name="twitter:description" content="Built by Dhaka hosts for Dhaka hosts. Manage bookings, resolve disputes, and receive instant payouts. Reserve your early access host profile - free.">
-    <meta name="twitter:image" content="https://ghoreo.com/Og-image.jpg">
+<!-- PWA / Mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#003C32">
+<link rel="manifest" href="site.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <!-- Geo tags -->
-    <meta name="geo.region" content="BD-C">
-    <meta name="geo.placename" content="Dhaka, Bangladesh">
-    <meta name="geo.position" content="23.8103;90.4125">
-    <meta name="ICBM" content="23.8103, 90.4125">
+<!-- Favicons -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
 
-    <!-- Theme color -->
-    <meta name="theme-color" content="#003C32">
+<!-- Google Fonts: Nunito only -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
+<!-- Google Analytics 4 — carried over exactly -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMTRW86BYT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZMTRW86BYT');
+</script>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": "Organization",
+      "name": "GHOREO",
+      "url": "https://ghoreo.com",
+      "logo": "https://ghoreo.com/logo.png",
+      "sameAs": [
+        "https://www.instagram.com/ghoreo.bd/",
+        "https://www.facebook.com/ghoreo/",
+        "https://www.linkedin.com/company/ghoreo/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Block M, Aftab Nagar Main Rd",
+        "addressLocality": "Dhaka",
+        "postalCode": "1219",
+        "addressCountry": "BD"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 23.8103,
+        "longitude": 90.4125
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Dhaka"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "name": "GHOREO Hotel Compliance System",
+      "description": "Helps small hotels in Dhaka submit guest data to government HBMS system and manage compliance workflows from walk-in and WhatsApp bookings.",
+      "about": {
+        "@type": "Thing",
+        "name": "HBMS Bangladesh hotel compliance system"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
         {
-          "@type": "Organization",
-          "name": "GHOREO",
-          "url": "https://ghoreo.com",
-          "logo": "https://ghoreo.com/android-chrome-512x512.png",
-          "email": "info@ghoreo.com",
-          "telephone": "+8801326552359",
-          "sameAs": [
-            "https://www.instagram.com/ghoreo.bd/",
-            "https://www.facebook.com/ghoreo/",
-            "https://www.linkedin.com/company/ghoreo/"
-          ],
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Block M, Aftab Nagar Main Rd",
-            "addressLocality": "Dhaka",
-            "postalCode": "1219",
-            "addressCountry": "BD"
+          "@type": "Question",
+          "name": "What is GHOREO used for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GHOREO is a hotel management system for small hotels in Dhaka that handles walk-in bookings, WhatsApp reservations, guest verification, and HBMS compliance reporting in one workflow."
           }
         },
         {
-          "@type": "SoftwareApplication",
-          "name": "GHOREO",
-          "applicationCategory": "BusinessApplication",
-          "operatingSystem": "Web",
-          "description": "Apartment management software for hosts in Dhaka. Automate bookings, resolve disputes, and receive instant payouts directly.",
-          "url": "https://ghoreo.com",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "BDT",
-            "description": "Early access - no payment required"
+          "@type": "Question",
+          "name": "Does GHOREO help with HBMS compliance in Bangladesh?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. GHOREO helps hotel owners prepare and submit guest information required for HBMS compliance by structuring guest data, verification, and reporting before submission."
           }
         },
         {
-          "@type": "LocalBusiness",
-          "name": "GHOREO",
-          "url": "https://ghoreo.com",
-          "email": "info@ghoreo.com",
-          "telephone": "+8801326552359",
-          "description": "Apartment management software built by and for Dhaka apartment hosts.",
-          "sameAs": [
-            "https://www.instagram.com/ghoreo.bd/",
-            "https://www.facebook.com/ghoreo/",
-            "https://www.linkedin.com/company/ghoreo/"
-          ],
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Block M, Aftab Nagar Main Rd",
-            "addressLocality": "Dhaka",
-            "postalCode": "1219",
-            "addressCountry": "BD"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 23.8103,
-            "longitude": 90.4125
-          },
-          "areaServed": {
-            "@type": "City",
-            "name": "Dhaka"
+          "@type": "Question",
+          "name": "Is GHOREO only for hotels or also apartments?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GHOREO is primarily built for small hotels under 40 rooms, guest houses, and apartment-style hospitality operators managing walk-in and direct bookings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do guests need to install an app to use GHOREO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Guests do not need to install any app. The hotel owner handles verification and submission through GHOREO."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can GHOREO work with WhatsApp bookings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. GHOREO is designed for WhatsApp and walk-in bookings, allowing owners to quickly register guests and manage compliance without OTA systems."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is GHOREO replacing the government HBMS system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. GHOREO is not a replacement. It helps hotel owners organize guest data and streamline submission to the official HBMS system used for compliance reporting in Bangladesh."
           }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+<style>
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: 'Nunito', sans-serif;
+  background: #F8F7F5;
+  color: #131d24;
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+button { font-family: inherit; }
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.wrap {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  background: #F8F7F5;
+  min-height: 100vh;
+  box-shadow: 0 0 60px rgba(0,0,0,0.07);
+  position: relative;
+  overflow: hidden;
+}
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+/* ============================================================
+   UTILITIES
+   ============================================================ */
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
 
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMTRW86BYT"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-ZMTRW86BYT');
-    </script>
+/* ============================================================
+   NAV
+   ============================================================ */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: 56px;
+  background: #003C32;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.18);
+}
+.nav-logo { height: 24px; width: auto; }
+.btn-nav {
+  background: #2D9B6F;
+  color: #fff;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+.btn-nav:hover { background: #247d59; }
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  padding: 32px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (min-width: 540px) {
+  .hero { flex-direction: row; align-items: flex-start; gap: 28px; }
+}
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+.hero-chip {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #2D9B6F;
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+}
+.hero-chip svg { flex-shrink: 0; margin-top: 2px; }
+.hero-h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #003C32;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+}
+@media (min-width: 540px) { .hero-h1 { font-size: 36px; } }
+.hero-sub {
+  font-size: 15px;
+  color: #6B7B8D;
+  line-height: 1.65;
+}
+.hero-actions { display: flex; flex-direction: column; gap: 10px; padding-top: 4px; }
+.btn-hero {
+  height: 52px;
+  background: #003C32;
+  color: #F0EEE9;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.15s;
+}
+.btn-hero:hover { background: #004d40; }
+.hero-note {
+  font-size: 12px;
+  color: #6B7B8D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.hero-badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: #2D9B6F;
+  border: 1px solid #BEC8D2;
+  background: #fff;
+  border-radius: 20px;
+  padding: 4px 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  align-self: flex-start;
+}
+.hero-img-wrap {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 200px;
+  border: 1px solid #BEC8D2;
+  border-radius: 24px;
+  padding: 7px;
+  background: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (min-width: 540px) { .hero-img-wrap { max-width: 220px; margin: 0; } }
+.hero-img-wrap img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 18px;
+  border: 1px solid #BEC8D2;
+  display: block;
+}
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #F7F7F7;
-            color: #003C32;
-            line-height: 1.5;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            padding-bottom: 0;
-            position: relative;
-        }
+/* ============================================================
+   TRUST BAR
+   ============================================================ */
+.trust-bar {
+  border-top: 1px solid #BEC8D2;
+  border-bottom: 1px solid #BEC8D2;
+  padding: 11px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  background: rgba(255,255,255,0.55);
+  font-size: 12px;
+  font-weight: 600;
+  color: #003C32;
+}
+.trust-sep { color: #BEC8D2; }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 24px 16px 40px;
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-        }
+/* ============================================================
+   PRODUCT SHOWCASE
+   ============================================================ */
+.product-section {
+  padding: 32px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.section-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  color: #6B7B8D;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #003C32;
+  line-height: 1.3;
+  text-align: center;
+}
+.section-sub {
+  font-size: 14px;
+  color: #6B7B8D;
+  text-align: center;
+  line-height: 1.6;
+}
+.product-img-caption {
+  font-size: 12px;
+  color: #BEC8D2;
+  text-align: center;
+  margin-top: 7px;
+}
+.product-note {
+  background: #fff;
+  border: 1px solid #BEC8D2;
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin-top: 4px;
+}
+.product-note svg { flex-shrink: 0; color: #2D9B6F; margin-top: 1px; }
+.product-note h3 { font-size: 15px; font-weight: 700; color: #003C32; }
+.product-note p { font-size: 13px; color: #6B7B8D; margin-top: 3px; line-height: 1.5; }
 
-        /* Header */
-        .header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 6px;
-            text-align: center;
-        }
-        .security-label {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 12px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: #003C32;
-        }
+/* ============================================================
+   STORY SECTION
+   ============================================================ */
+.story-section { padding: 0 16px 28px; }
+.story-card {
+  background: #fff;
+  border: 1px solid #BEC8D2;
+  border-radius: 8px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.story-title { font-size: 19px; font-weight: 700; color: #003C32; line-height: 1.35; }
+.story-body { font-size: 14px; color: #6B7B8D; line-height: 1.7; }
+.story-quote {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  color: #003C32;
+  line-height: 1.55;
+  border-left: 3px solid #2D9B6F;
+  padding-left: 14px;
+  margin: 2px 0;
+}
+.story-chips { display: flex; flex-wrap: wrap; gap: 7px; }
+.story-chip {
+  font-size: 12px;
+  font-weight: 600;
+  background: #F8F7F5;
+  border: 1px solid #BEC8D2;
+  border-radius: 20px;
+  padding: 4px 12px;
+  color: #6B7B8D;
+}
 
-        /* Founder intro chip */
-        .intro-chip {
-            background-color: #ffffff;
-            padding: 36px 28px;
-            border-radius: 32px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 20px;
-            box-shadow: 0 8px 24px rgba(0,60,50,0.08);
-            border: 1px solid #E0E6EC;
-        }
-        .intro-text {
-            font-size: 17px;
-            font-weight: 400;
-            line-height: 1.6;
-            color: #003C32;
-            max-width: 580px;
-        }
-        .verified-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(0,60,50,0.04);
-            color: #003C32;
-            font-weight: 500;
-            font-size: 14px;
-            padding: 8px 20px;
-            border-radius: 40px;
-            border: 1px solid rgba(0,60,50,0.1);
-            box-shadow: 0 2px 8px rgba(0,60,50,0.02);
-        }
+/* ============================================================
+   FEATURES GRID
+   ============================================================ */
+.features-section { padding: 0 16px 28px; }
+.features-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.feature-card {
+  background: #fff;
+  border: 1px solid #BEC8D2;
+  border-radius: 8px;
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+  text-align: center;
+}
+.feature-icon { color: #2D9B6F; }
+.feature-icon.muted { color: #BEC8D2; }
+.feature-card.dim { opacity: 0.82; }
+.feature-title { font-size: 13px; font-weight: 700; color: #003C32; line-height: 1.35; }
+.feature-card.dim .feature-title { color: #6B7B8D; }
+.feature-desc { font-size: 12px; color: #6B7B8D; line-height: 1.55; }
 
-        /* Credibility bar */
-        .credibility-bar {
-            background: white;
-            padding: 20px;
-            border-radius: 28px;
-            box-shadow: 0 12px 24px -8px rgba(0,60,50,0.1);
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            gap: 24px;
-            border: 1px solid #E0E6EC;
-        }
-        .cred-metric {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 500;
-            font-size: 15px;
-            color: #003C32;
-        }
-        .cred-metric i {
-            color: #003C32;
-            font-size: 18px;
-        }
+/* ============================================================
+   COMPLIANCE
+   ============================================================ */
+.compliance-section { padding: 0 16px 28px; }
+.compliance-card {
+  background: #003C32;
+  border-radius: 8px;
+  padding: 24px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.compliance-badge {
+  background: #2D9B6F;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 11px;
+  border-radius: 20px;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.compliance-title { font-size: 22px; font-weight: 600; line-height: 1.3; }
+.compliance-body { font-size: 14px; color: rgba(255,255,255,0.78); line-height: 1.65; }
 
-        /* Story section */
-        .story-section {
-            background: white;
-            border-radius: 28px;
-            padding: 28px 24px;
-            box-shadow: 0 12px 24px -8px rgba(0,60,50,0.1);
-            border: 1px solid #E0E6EC;
-        }
-        .story-title {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 16px;
-            color: #003C32;
-        }
-        .story-text {
-            font-size: 15px;
-            color: #4A5C68;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        .story-quote {
-            background: #F5FAF8;
-            padding: 20px;
-            border-radius: 20px;
-            font-style: italic;
-            border-left: 4px solid #003C32;
-            color: #2A4A4A;
-            margin-bottom: 20px;
-        }
-        .timeline-items {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-        .timeline-item {
-            background: #F0F4F8;
-            padding: 8px 16px;
-            border-radius: 40px;
-            font-size: 14px;
-            color: #003C32;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-        }
+/* ============================================================
+   TESTIMONIAL
+   ============================================================ */
+.testimonial-section { padding: 0 16px 28px; }
+.testimonial-card {
+  background: #fff;
+  border: 1px solid #BEC8D2;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+}
+.testimonial-quote {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  color: #003C32;
+  line-height: 1.62;
+}
+.testimonial-name { font-size: 14px; font-weight: 700; color: #131d24; }
+.testimonial-role { font-size: 12px; color: #6B7B8D; margin-top: 2px; }
+.testimonial-badge {
+  background: #dfe9f4;
+  border: 1px solid #BEC8D2;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: #6B7B8D;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.testimonial-context { font-size: 12px; color: #6B7B8D; line-height: 1.5; }
 
-        /* Features Grid */
-        .features-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 16px;
-        }
-        @media (min-width: 640px) {
-            .features-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        @media (min-width: 1024px) {
-            .features-grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-        .feature-card {
-            background: white;
-            border-radius: 24px;
-            padding: 24px 20px;
-            box-shadow: 0 8px 20px -6px rgba(0,60,50,0.08);
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            border: 1px solid #E0E6EC;
-            transition: all 0.2s ease;
-            height: 100%;
-        }
-        .feature-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 16px 28px -8px rgba(0,60,50,0.15);
-        }
-        .feature-icon {
-            font-size: 28px;
-            color: #003C32;
-            margin-bottom: 8px;
-        }
-        .feature-title {
-            font-size: 18px;
-            font-weight: 600;
-            color: #003C32;
-        }
-        .feature-desc {
-            font-size: 14px;
-            color: #4A5C68;
-            line-height: 1.5;
-        }
+/* ============================================================
+   BRIDGE / POSITIONING
+   ============================================================ */
+.bridge-section { padding: 0 16px 28px; }
+.bridge-card {
+  background: #fff;
+  border: 1px solid #BEC8D2;
+  border-radius: 8px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.bridge-title { font-size: 20px; font-weight: 700; color: #003C32; line-height: 1.3; }
+.bridge-body { font-size: 14px; color: #6B7B8D; line-height: 1.65; }
+.bridge-chips { display: flex; flex-wrap: wrap; gap: 7px; }
+.bridge-chip {
+  font-size: 12px;
+  font-weight: 600;
+  background: #F8F7F5;
+  border: 1px solid #BEC8D2;
+  border-radius: 20px;
+  padding: 5px 12px;
+  color: #003C32;
+}
 
-        /* VC Card */
-        .vc-card {
-            background: white;
-            border-radius: 28px;
-            overflow: hidden;
-            box-shadow: 0 12px 28px -8px rgba(0,60,50,0.1);
-            border-top: 4px solid #003C32;
-        }
-        .vc-body {
-            padding: 28px 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        .vc-name {
-            font-size: 20px;
-            font-weight: 600;
-            line-height: 1.3;
-            color: #003C32;
-        }
-        .vc-title {
-            font-size: 15px;
-            color: #5A6B7A;
-            font-weight: 400;
-            margin-top: 4px;
-        }
-        .vc-quote {
-            font-size: 16px;
-            font-style: italic;
-            border-left: 4px solid rgba(0,60,50,0.15);
-            padding-left: 18px;
-            color: #003C32;
-            line-height: 1.6;
-        }
-        .vc-verification {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: #F0F7F5;
-            color: #003C32;
-            font-weight: 500;
-            font-size: 13px;
-            padding: 8px 16px;
-            border-radius: 40px;
-            width: fit-content;
-        }
-        .vc-context {
-            background: #FAFCFE;
-            padding: 18px;
-            border-radius: 20px;
-            font-size: 15px;
-            color: #2A4A4A;
-            line-height: 1.6;
-            border: 1px solid #E0E6EC;
-        }
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq-section { padding: 0 16px 28px; }
+.faq-heading { font-size: 19px; font-weight: 700; color: #003C32; margin-bottom: 14px; }
+.faq-list {
+  border: 1px solid #BEC8D2;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+.faq-item { border-bottom: 1px solid #BEC8D2; }
+.faq-item:last-child { border-bottom: none; }
+.faq-q {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 15px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #003C32;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  transition: background 0.1s;
+}
+.faq-q:hover { background: #f5f5f5; }
+.faq-icon {
+  flex-shrink: 0;
+  color: #6B7B8D;
+  transition: transform 0.2s ease;
+}
+.faq-q[aria-expanded="true"] .faq-icon { transform: rotate(180deg); }
+.faq-a {
+  display: none;
+  padding: 0 16px 15px;
+  font-size: 14px;
+  color: #6B7B8D;
+  line-height: 1.65;
+}
+.faq-a.open { display: block; }
 
-        /* Bridge + chips */
-        .bridge-section {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        .bridge-text {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 1.6;
-            color: #2A4A4A;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        .feature-chips {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 12px;
-        }
-        .chip {
-            background: #ffffff;
-            color: #003C32;
-            padding: 10px 20px;
-            border-radius: 40px;
-            font-size: 14px;
-            font-weight: 500;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            border: 1px solid #003C32;
-            box-shadow: 0 2px 6px rgba(0,60,50,0.05);
-        }
+/* ============================================================
+   CTA
+   ============================================================ */
+.cta-section {
+  padding: 32px 16px 28px;
+  border-top: 1px solid #BEC8D2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.cta-badge {
+  background: #FFF3E0;
+  color: #B85C00;
+  border: 1px solid #FFE0B2;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 13px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.cta-headline { font-size: 30px; font-weight: 700; color: #003C32; line-height: 1.18; }
+.btn-cta {
+  height: 52px;
+  width: 100%;
+  max-width: 300px;
+  background: #003C32;
+  color: #F0EEE9;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 4px;
+  transition: background 0.15s;
+}
+.btn-cta:hover { background: #004d40; }
+.cta-note { font-size: 12px; color: #6B7B8D; line-height: 1.55; }
 
-        /* Corporate info */
-        .corporate-info {
-            text-align: center;
-            font-size: 12px;
-            color: #5A6B7A;
-            margin-top: 16px;
-            margin-bottom: 8px;
-            padding: 12px 0 4px;
-            border-top: 1px solid #E0E6EC;
-            width: 100%;
-        }
-
-        /* Social links */
-        .social-links {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            padding-bottom: 28px;
-        }
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 1px solid #E0E6EC;
-            background: #ffffff;
-            color: #003C32;
-            font-size: 16px;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            box-shadow: 0 2px 6px rgba(0,60,50,0.06);
-        }
-        .social-links a:hover {
-            background: #003C32;
-            color: #ffffff;
-            border-color: #003C32;
-        }
-
-        /* Sticky CTA footer */
-        .sticky-footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(255,255,255,0.98);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-top: 1px solid #E0E6EC;
-            padding: 16px 16px 24px;
-            box-shadow: 0 -4px 20px rgba(0,60,50,0.05);
-            z-index: 100;
-        }
-        .footer-content {
-            max-width: 800px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 14px;
-        }
-        .urgency-badge {
-            background: #FFF1E5;
-            color: #B85C3A;
-            padding: 8px 16px;
-            border-radius: 40px;
-            font-size: 13px;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .cta-button {
-            background: #003C32;
-            color: white;
-            border: none;
-            padding: 16px 32px;
-            border-radius: 40px;
-            font-size: 17px;
-            font-weight: 500;
-            width: 100%;
-            max-width: 380px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            box-shadow: 0 8px 20px -6px #003C32;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-        .cta-button:hover {
-            background: #002b24;
-            transform: scale(1.02);
-        }
-        .footer-note {
-            font-size: 12px;
-            color: #5A6B7A;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        /* Mobile optimization */
-        @media (max-width: 480px) {
-            .intro-chip {
-                padding: 28px 20px;
-            }
-            .intro-text {
-                font-size: 16px;
-            }
-        }
-        @media (max-width: 380px) {
-            .feature-card {
-                padding: 20px 16px;
-            }
-            .feature-title {
-                font-size: 17px;
-            }
-            .credibility-bar {
-                gap: 16px;
-                padding: 16px;
-            }
-            .cta-button {
-                padding: 14px 20px;
-                font-size: 16px;
-            }
-        }
-
-        .visually-hidden {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0,0,0,0);
-            white-space: nowrap;
-            border: 0;
-        }
-    </style>
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+  background: #003C32;
+  color: #F0EEE9;
+  padding: 24px 16px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+.footer-info { font-size: 13px; opacity: 0.78; display: flex; flex-direction: column; gap: 3px; }
+.footer-logo { height: 24px; width: auto; opacity: 0.4; margin-top: 10px; }
+</style>
 </head>
 <body>
+<div class="wrap">
 
-    <h1 class="visually-hidden">GHOREO - Apartment Host Management Platform for Dhaka</h1>
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <img src="logo.png" alt="Ghoreo" class="nav-logo">
+  <a href="https://forms.gle/ze1gAAhcYgfkKxPQ6" class="btn-nav">Request a Demo</a>
+</nav>
 
-    <div class="container">
 
-        <div class="header">
-            <div class="security-label">
-                <i class="fas fa-lock"></i> VERIFIED HOST CREDENTIALS
-            </div>
-        </div>
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  padding: 32px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (min-width: 540px) {
+  .hero { flex-direction: row; align-items: flex-start; gap: 28px; }
+}
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+.hero-chip {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #2D9B6F;
+  line-height: 1.55;
+  letter-spacing: 0.01em;
+}
+.hero-chip svg { flex-shrink: 0; margin-top: 2px; }
+.hero-h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #003C32;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+}
+@media (min-width: 540px) { .hero-h1 { font-size: 36px; } }
+.hero-sub {
+  font-size: 15px;
+  color: #6B7B8D;
+  line-height: 1.65;
+}
+.hero-actions { display: flex; flex-direction: column; gap: 10px; padding-top: 4px; }
+.btn-hero {
+  height: 52px;
+  background: #003C32;
+  color: #F0EEE9;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.15s;
+}
+.btn-hero:hover { background: #004d40; }
+.hero-note {
+  font-size: 12px;
+  color: #6B7B8D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.hero-badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: #2D9B6F;
+  border: 1px solid #BEC8D2;
+  background: #fff;
+  border-radius: 20px;
+  padding: 4px 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  align-self: flex-start;
+}
+.hero-img-wrap {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 200px;
+  border: 1px solid #BEC8D2;
+  border-radius: 24px;
+  padding: 7px;
+  background: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media (min-width: 540px) { .hero-img-wrap { max-width: 220px; margin: 0; } }
+.hero-img-wrap img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 18px;
+  border: 1px solid #BEC8D2;
+  display: block;
+}
 
-        <div class="intro-chip">
-            <i class="fas fa-users" style="font-size: 28px; color: #003C32;"></i>
-            <h2 class="intro-text">
-                We run apartments in Dhaka, just like you. We've faced late payments, miscommunication, and the chaos of hosting. So we built something better.
-            </h2>
-            <div class="verified-badge">
-                <i class="fas fa-check-circle"></i> Hosts like you
-            </div>
-        </div>
+/* ============================================================
+   TRUST BAR
+   ============================================================ */
+.trust-bar {
+  border-top: 1px solid #BEC8D2;
+  border-bottom: 1px solid #BEC8D2;
+  padding: 11px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  background: rgba(255,255,255,0.55);
+  font-size: 12px;
+  font-weight: 600;
+  color: #003C32;
+}
+.trust-sep { color: #BEC8D2; }
 
-        <div class="credibility-bar">
-            <span class="cred-metric"><i class="fas fa-star"></i> 70+ reviews across platforms</span>
-            <span class="cred-metric"><i class="fas fa-home"></i> We host too</span>
-            <span class="cred-metric"><i class="fas fa-calendar-check"></i> 600+ stays managed</span>
-        </div>
+/* ============================================================
+   PRODUCT SHOWCASE
+   ============================================================ */
+.product-section {
+  padding: 32px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.section-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  color: #6B7B8D;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #003C32;
+  line-height: 1.3;
+  text-align: center;
+}
+.section-sub {
+  font-size: 14px;
+  color: #6B7B8D;
+  text-align: center;
+  line-height: 1.6;
+}
+.product-img-caption {
+  font-size: 12px;
+  color: #BEC8D2;
+  text-align: center;
+  margin-top: 7px;
+}
+.product-note {
+  background: #fff;
+  border: 1px solid #BEC8D2;
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin-top: 4px;
+}
+.product-note svg { flex-shrink: 0; color: #2D9B6F; margin-top: 1px; }
+.product-note h3 { font-size: 15px; font-weight: 700; color: #003C32; }
+.product-note p { font-size: 13px; color: #6B7B8D; margin-top: 3px; line-height: 1.5; }
 
-        <div class="story-section">
-            <h2 class="story-title">A mistake that changed everything.</h2>
-            <div class="story-text">
-                A guest once arrived to find others in what they thought was a private apartment. We had not communicated clearly. It was on us.
-            </div>
-            <div class="story-quote">
-                "We apologised, refunded the fee, and paused. Then we rebuilt. Not just the apartment listings, but the whole system. GHOREO for hosts came from that moment."
-            </div>
-            <div class="timeline-items">
-                <span class="timeline-item"><i class="fas fa-pause-circle"></i> Paused</span>
-                <span class="timeline-item"><i class="fas fa-tools"></i> Rebuilt</span>
-                <span class="timeline-item"><i class="fas fa-rocket"></i> Launched for hosts</span>
-            </div>
-        </div>
+/* ============================================================
+   STORY SECTION
+   ============================================================ */
+.story-section { padding: 0 16px 28px; }
+.story-card {
+  background: #fff;
+  border: 1px solid #BEC8D2;
+  border-radius: 8px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.story-title { font-size: 19px; font-weight: 700; color: #003C32; line-height: 1.35; }
+.story-body { font-size: 14px; color: #6B7B8D; line-height: 1.7; }
+.story-quote {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  color: #003C32;
+  line-height: 1.55;
+  border-left: 3px solid #2D9B6F;
+  padding-left: 14px;
+  margin: 2px 0;
+}
+.story-chips { display: flex; flex-wrap: wrap; gap: 7px; }
+.story-chip {
+  font-size: 12px;
+  font-weight: 600;
+  background: #F8F7F5;
+  border: 1px solid #BEC8D2;
+  border-radius: 20px;
+  padding: 4px 12px;
+  color: #6B7B8D;
+}
 
-        <div class="features-grid">
-            <div class="feature-card">
-                <i class="fas fa-calendar-plus feature-icon"></i>
-                <h3 class="feature-title">Custom booking now</h3>
-                <div class="feature-desc">Create direct bookings for walk ins and WhatsApp guests in seconds.</div>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-gavel feature-icon"></i>
-                <h3 class="feature-title">Dispute resolution</h3>
-                <div class="feature-desc">Fair, fast mediation between hosts and guests when issues arise.</div>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-bolt feature-icon"></i>
-                <h3 class="feature-title">Money directly to you</h3>
-                <div class="feature-desc">Funds go straight into your account. No holding, no delays.</div>
-            </div>
-            <div class="feature-card">
-                <i class="fas fa-sitemap feature-icon"></i>
-                <h3 class="feature-title">Structured workflow</h3>
-                <div class="feature-desc">Organise direct, walk in, and WhatsApp customers in one simple flow.</div>
-            </div>
-        </div>
+/* ============================================================
+   FEATURES GRID
+   ============================================================ */
+.features-section { padding: 0 16px 28px; }
+.features-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.feature-card {
+  background: #fff;
+  border: 1px solid #BEC8D2;
+  border-radius: 8px;
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+  text-align: center;
+}
+.feature-icon { color: #2D9B6F; }
+.feature-icon.muted { color: #BEC8D2; }
+.feature-card.dim { opacity: 0.82; }
+.feature-title { font-size: 13px; font-weight: 700; color: #003C32; line-height: 1.35; }
+.feature-card.dim .feature-title { color: #6B7B8D; }
+.feature-desc { font-size: 12px; color: #6B7B8D; line-height: 1.55; }
 
-        <div class="vc-card">
-            <div class="vc-body">
-                <div>
-                    <h2 class="vc-name">Jamal Uddin Ahmed</h2>
-                    <h3 class="vc-title">Officer in Charge, SAARC Development Fund · Thimphu</h3>
-                </div>
-                <div class="vc-quote">
-                    "I experienced GHOREO's service firsthand as a guest. The care and hospitality stood out."
-                </div>
-                <div class="vc-verification">
-                    <i class="fas fa-lock"></i> Genuine guest · Feb 2024
-                </div>
-                <div class="vc-context">
-                    Mr. Ahmed stayed with GHOREO during a visit to Dhaka. He appreciated the experience and the team's attention to detail.
-                </div>
-            </div>
-        </div>
+/* ============================================================
+   COMPLIANCE
+   ============================================================ */
+.compliance-section { padding: 0 16px 28px; }
+.compliance-card {
+  background: #003C32;
+  border-radius: 8px;
+  padding: 24px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.compliance-badge {
+  background: #2D9B6F;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 11px;
+  border-radius: 20px;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.compliance-title { font-size: 22px; font-weight: 600; line-height: 1.3; }
+.compliance-body { font-size: 14px; color: rgba(255,255,255,0.78); line-height: 1.65; }
 
-        <div class="bridge-section">
-            <h2 class="bridge-text">
-                We built GHOREO around the things we wished we had as hosts. Simple tools that actually help.
-            </h2>
-            <div class="feature-chips">
-                <span class="chip"><i class="fas fa-coins"></i> Instant payouts</span>
-                <span class="chip"><i class="fas fa-user-check"></i> Verified guests</span>
-                <span class="chip"><i class="fas fa-headset"></i> 24/7 support</span>
-                <span class="chip"><i class="fas fa-file-signature"></i> Clear house rules</span>
-            </div>
-        </div>
+/* ============================================================
+   TESTIMONIAL
+   ============================================================ */
+.testimonial-section { padding: 0 16px 28px; }
+.testimonial-card {
+  background: #fff;
+  border: 1px solid #BEC8D2;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+}
+.testimonial-quote {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  color: #003C32;
+  line-height: 1.62;
+}
+.testimonial-name { font-size: 14px; font-weight: 700; color: #131d24; }
+.testimonial-role { font-size: 12px; color: #6B7B8D; margin-top: 2px; }
+.testimonial-badge {
+  background: #dfe9f4;
+  border: 1px solid #BEC8D2;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: #6B7B8D;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.testimonial-context { font-size: 12px; color: #6B7B8D; line-height: 1.5; }
 
-        <div class="corporate-info">
-            Block M, Aftab Nagar Main Rd, Dhaka 1219, Bangladesh &middot; info@ghoreo.com &middot; +880 1326 552359
-        </div>
+/* ============================================================
+   BRIDGE / POSITIONING
+   ============================================================ */
+.bridge-section { padding: 0 16px 28px; }
+.bridge-card {
+  background: #fff;
+  border: 1px solid #BEC8D2;
+  border-radius: 8px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.bridge-title { font-size: 20px; font-weight: 700; color: #003C32; line-height: 1.3; }
+.bridge-body { font-size: 14px; color: #6B7B8D; line-height: 1.65; }
+.bridge-chips { display: flex; flex-wrap: wrap; gap: 7px; }
+.bridge-chip {
+  font-size: 12px;
+  font-weight: 600;
+  background: #F8F7F5;
+  border: 1px solid #BEC8D2;
+  border-radius: 20px;
+  padding: 5px 12px;
+  color: #003C32;
+}
 
-        <div class="social-links">
-            <a href="https://www.instagram.com/ghoreo.bd/" target="_blank" rel="noopener noreferrer" aria-label="GHOREO on Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/ghoreo/" target="_blank" rel="noopener noreferrer" aria-label="GHOREO on Facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.linkedin.com/company/ghoreo/" target="_blank" rel="noopener noreferrer" aria-label="GHOREO on LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-        </div>
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq-section { padding: 0 16px 28px; }
+.faq-heading { font-size: 19px; font-weight: 700; color: #003C32; margin-bottom: 14px; }
+.faq-list {
+  border: 1px solid #BEC8D2;
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+.faq-item { border-bottom: 1px solid #BEC8D2; }
+.faq-item:last-child { border-bottom: none; }
+.faq-q {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 15px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #003C32;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  transition: background 0.1s;
+}
+.faq-q:hover { background: #f5f5f5; }
+.faq-icon {
+  flex-shrink: 0;
+  color: #6B7B8D;
+  transition: transform 0.2s ease;
+}
+.faq-q[aria-expanded="true"] .faq-icon { transform: rotate(180deg); }
+.faq-a {
+  display: none;
+  padding: 0 16px 15px;
+  font-size: 14px;
+  color: #6B7B8D;
+  line-height: 1.65;
+}
+.faq-a.open { display: block; }
 
+/* ============================================================
+   CTA
+   ============================================================ */
+.cta-section {
+  padding: 32px 16px 28px;
+  border-top: 1px solid #BEC8D2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.cta-badge {
+  background: #FFF3E0;
+  color: #B85C00;
+  border: 1px solid #FFE0B2;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 13px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.cta-headline { font-size: 30px; font-weight: 700; color: #003C32; line-height: 1.18; }
+.btn-cta {
+  height: 52px;
+  width: 100%;
+  max-width: 300px;
+  background: #003C32;
+  color: #F0EEE9;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 4px;
+  transition: background 0.15s;
+}
+.btn-cta:hover { background: #004d40; }
+.cta-note { font-size: 12px; color: #6B7B8D; line-height: 1.55; }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+  background: #003C32;
+  color: #F0EEE9;
+  padding: 24px 16px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+.footer-info { font-size: 13px; opacity: 0.78; display: flex; flex-direction: column; gap: 3px; }
+.footer-logo { height: 24px; width: auto; opacity: 0.4; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <img src="logo.png" alt="Ghoreo" class="nav-logo">
+  <a href="https://forms.gle/ze1gAAhcYgfkKxPQ6" class="btn-nav">Request a Demo</a>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="hero-content">
+    <div class="hero-chip">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 2.18l7 3.12V11c0 4.52-3.08 8.74-7 9.93-3.92-1.19-7-5.41-7-9.93V6.3l7-3.12z"/></svg>
+      We built GHOREO for small hotel owners in Dhaka (&lt;40 rooms) who manage walk-in guests, WhatsApp bookings, and government-required guest registration (HBMS).
     </div>
 
-    <div class="sticky-footer">
-        <div class="footer-content">
-            <div class="urgency-badge">
-                <i class="fas fa-hourglass-half"></i> Early access · 50 spots
-            </div>
-            <a href="https://forms.gle/ze1gAAhcYgfkKxPQ6" target="_blank" rel="noopener noreferrer" class="cta-button">
-                Reserve your host profile <i class="fas fa-arrow-right"></i>
-            </a>
-            <div class="footer-note">
-                <i class="fas fa-lock"></i> No payment required · Cancel anytime
-            </div>
-        </div>
+    <h1 class="hero-h1">Check in guests.<br>Stay compliant.<br>Get paid.</h1>
+
+    <p class="hero-sub">One tool for guest check-in, booking records, and Hello DMP compliance. Built by hosts who ran hotels in Dhaka.</p>
+
+    <div class="hero-actions">
+      <a href="https://forms.gle/ze1gAAhcYgfkKxPQ6" class="btn-hero">
+        Request a free demo
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z"/></svg>
+      </a>
+      <span class="hero-note">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        No payment required &middot; Cancel anytime
+      </span>
     </div>
 
-    <script>
-        function adjustBodyPadding() {
-            var footer = document.querySelector('.sticky-footer');
-            if (footer) {
-                document.body.style.paddingBottom = (footer.offsetHeight + 16) + 'px';
-            }
-        }
-        document.addEventListener('DOMContentLoaded', adjustBodyPadding);
-        window.addEventListener('resize', adjustBodyPadding);
-    </script>
+    <div class="hero-badge">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      Built for hotel owners in Bangladesh
+    </div>
+  </div>
+
+  <div class="hero-img-wrap">
+    <img src="mobile-dashboard.png" alt="Ghoreo mobile dashboard" style="max-width:220px;border-radius:18px;border:1px solid #BEC8D2;" width="220" height="440">
+  </div>
+</header>
+
+<!-- ===================== TRUST BAR ===================== -->
+<div class="trust-bar" aria-label="Social proof">
+  <span>&#9733; 70+ hotel owners using GHOREO</span>
+  <span class="trust-sep">|</span>
+  <span>Built for Dhaka small hotels</span>
+  <span class="trust-sep">|</span>
+  <span>&#10003; 600+ guest check-ins processed</span>
+</div>
+
+<!-- ===================== PRODUCT SHOWCASE ===================== -->
+<section class="product-section" aria-labelledby="product-heading">
+  <div>
+    <p class="section-eyebrow">THE PRODUCT</p>
+    <h2 class="section-title" id="product-heading" style="margin-top:4px;">Everything in one screen.</h2>
+    <p class="section-sub" style="margin-top:6px;">Works in any mobile browser. No app to download. Opens in 3 seconds on any Android.</p>
+  </div>
+  <div>
+    <img src="desktop-dashboard.png"
+         alt="Ghoreo desktop dashboard"
+         loading="lazy"
+         style="width:100%;border-radius:8px;border:1px solid #BEC8D2;box-shadow:0 4px 24px rgba(0,0,0,0.08);">
+    <p class="product-img-caption">Desktop view &middot; any browser</p>
+  </div>
+  <div class="product-note">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
+    <div>
+      <h3>At the desk. One tap.</h3>
+      <p>The same dashboard on your phone. Manage check-ins from the front desk or from anywhere.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STORY ===================== -->
+<section class="story-section" aria-labelledby="story-heading">
+  <div class="story-card">
+    <h2 class="story-title" id="story-heading">Why we built a hotel management system for Dhaka</h2>
+    <p class="story-body">Most small hotels in Dhaka still manage guests using paper logs, WhatsApp messages, or manual registers. This creates delays, missing records, and problems during police inspections or HBMS submissions.<br><br>We built GHOREO after seeing how difficult it is for small hotel owners to manage guest registration, walk-in bookings, and compliance at the same time.</p>
+    <blockquote class="story-quote">We rebuilt everything to make guest registration, compliance reporting, and daily hotel operations fast and simple for small hotels in Bangladesh.</blockquote>
+    <div class="story-chips">
+      <span class="story-chip">Understood the problem</span>
+      <span class="story-chip">Built for small hotels</span>
+      <span class="story-chip">Launched in Dhaka</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FEATURES GRID ===================== -->
+<section class="features-section" aria-labelledby="features-heading">
+  <div class="features-grid">
+
+    <div class="feature-card">
+      <svg class="feature-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm-9-2V7H4v3H1v2h3v3h2v-3h3v-2H6zm9 4c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+      </svg>
+      <h3 class="feature-title">Walk-in &amp; WhatsApp bookings</h3>
+      <p class="feature-desc">Create instant bookings for walk-in guests or WhatsApp reservations without manual registers.</p>
+    </div>
+
+    <div class="feature-card">
+      <svg class="feature-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+      </svg>
+      <h3 class="feature-title">Guest registration &amp; verification</h3>
+      <p class="feature-desc">Capture guest details, ID information, and check-in records in a structured format for hotel use.</p>
+    </div>
+
+    <div class="feature-card">
+      <svg class="feature-icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+      </svg>
+      <h3 class="feature-title">Hotel compliance ready (HBMS workflow)</h3>
+      <p class="feature-desc">Prepare guest data in a format that supports HBMS reporting used in Dhaka hotel inspections.</p>
+    </div>
+
+    <div class="feature-card dim">
+      <svg class="feature-icon muted" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3c-1.65-1.66-4.34-1.66-6 0zm-4-4l2 2c2.76-2.76 7.24-2.76 10 0l2-2C15.14 9.14 8.87 9.14 5 13z"/>
+      </svg>
+      <h3 class="feature-title">Simple hotel management system</h3>
+      <p class="feature-desc">Manage rooms, guests, and daily operations in one system designed for small hotels in Bangladesh.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== COMPLIANCE URGENCY ===================== -->
+<section class="compliance-section">
+  <div class="compliance-card">
+    <span class="compliance-badge">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+      Hello DMP &middot; HBMS Ready
+    </span>
+    <h2 class="compliance-title">Hotels in your area will need this.</h2>
+    <p class="compliance-body">District enforcement for digital guest registration is becoming stricter. GHOREO is designed specifically to meet the formatting and data requirements of local law enforcement, keeping your property safe and compliant without extra paperwork.</p>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIAL ===================== -->
+<section class="testimonial-section">
+  <div class="testimonial-card">
+    <p class="testimonial-quote">"The check-in experience was smooth and organized. Everything was handled properly from arrival to registration."</p>
+    <div>
+      <p class="testimonial-name">Jamal Uddin Ahmed</p>
+      <p class="testimonial-role">Officer in Charge, SAARC Development Fund</p>
+    </div>
+    <span class="testimonial-badge">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+      Genuine guest &middot; Feb 2024
+    </span>
+    <p class="testimonial-context">This reflects the type of structured guest experience GHOREO helps hotel operators deliver consistently.</p>
+  </div>
+</section>
+
+<!-- ===================== BRIDGE / POSITIONING ===================== -->
+<section class="bridge-section">
+  <div class="bridge-card">
+    <h2 class="bridge-title">A complete hotel management system for Dhaka</h2>
+    <p class="bridge-body">GHOREO helps small hotel owners manage bookings, guest registration, and compliance workflows in one simple system.<br><br>Built specifically for hotels under 40 rooms in Bangladesh.</p>
+    <div class="bridge-chips">
+      <span class="bridge-chip">Hotel management software Bangladesh</span>
+      <span class="bridge-chip">Guest registration system Dhaka</span>
+      <span class="bridge-chip">HBMS compliance support</span>
+      <span class="bridge-chip">Small hotel PMS system</span>
+      <span class="bridge-chip">Walk-in booking software</span>
+      <span class="bridge-chip">Hotel boarder system</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq-section" aria-labelledby="faq-heading">
+  <h2 class="faq-heading" id="faq-heading">Frequently Asked Questions</h2>
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="true" onclick="toggleFaq(this)">
+        <span>What is GHOREO used for?</span>
+        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5H7z"/></svg>
+      </button>
+      <div class="faq-a open">GHOREO is a hotel management system for small hotels in Dhaka that handles walk-in bookings, WhatsApp reservations, guest verification, and HBMS compliance reporting in one workflow.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+        <span>Does GHOREO help with HBMS compliance in Bangladesh?</span>
+        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5H7z"/></svg>
+      </button>
+      <div class="faq-a">Yes. GHOREO helps hotel owners prepare and submit guest information required for HBMS compliance by structuring guest data, verification, and reporting before submission.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+        <span>Do I still need a register book (halkhata)?</span>
+        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5H7z"/></svg>
+      </button>
+      <div class="faq-a">No. GHOREO replaces manual register books by storing guest records digitally. Hotel owners can capture guest identity, room details, and payment information in one system instead of writing everything by hand.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+        <span>What happens if police or authorities ask for guest records?</span>
+        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5H7z"/></svg>
+      </button>
+      <div class="faq-a">All guest records are stored in a structured digital format so hotel owners can quickly retrieve check-in history, guest identity details, and booking records when needed for inspection or compliance purposes.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+        <span>Is GHOREO only for hotels or also apartments?</span>
+        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5H7z"/></svg>
+      </button>
+      <div class="faq-a">GHOREO is primarily built for small hotels under 40 rooms, guest houses, and apartment-style hospitality operators managing walk-in and direct bookings.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+        <span>Can GHOREO work with WhatsApp bookings?</span>
+        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5H7z"/></svg>
+      </button>
+      <div class="faq-a">Yes. GHOREO is designed for WhatsApp and walk-in bookings, allowing owners to quickly register guests and manage compliance without OTA systems.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+        <span>Is GHOREO replacing the government HBMS system?</span>
+        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5H7z"/></svg>
+      </button>
+      <div class="faq-a">No. GHOREO is not a replacement. It helps hotel owners organize guest data and streamline submission to the official HBMS system used for compliance reporting in Bangladesh.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+        <span>Is guest data safe in GHOREO?</span>
+        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5H7z"/></svg>
+      </button>
+      <div class="faq-a">Yes. Guest data is securely stored and only accessible to the hotel owner. Sensitive identity information is protected and only essential masked details are shown in the interface.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="cta-section">
+  <span class="cta-badge">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M6 2v6l2 2-2 2v6h12v-6l-2-2 2-2V2H6zm10 9.5l2 2V18H6v-4.5l2-2-2-2V4h10v4.5l-2 2z"/></svg>
+    Early access for small hotel owners in Dhaka
+  </span>
+  <h2 class="cta-headline">50 early host spots.<br>First month free.</h2>
+  <a href="https://forms.gle/ze1gAAhcYgfkKxPQ6" class="btn-cta">
+    Request a free demo
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z"/></svg>
+  </a>
+  <p class="cta-note">No payment required &middot; Built for hotels under 40 rooms &middot; Cancel anytime</p>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="footer-info">
+    <p>Aftab Nagar, Dhaka 1219, Bangladesh</p>
+    <p>info@ghoreo.com</p>
+  </div>
+  <img src="logo.png" alt="Ghoreo" class="footer-logo">
+</footer>
+
+</div><!-- .wrap -->
+
+<!-- SEO GEO PARAGRAPH (visually hidden) -->
+<p class="visually-hidden">
+GHOREO is a hotel management software for small hotels in Bangladesh. It supports guest registration, walk-in bookings, WhatsApp reservations, and HBMS compliance workflows for Dhaka hotel owners. It is designed for hotels under 40 rooms, guest houses, and apartment-style hospitality operators.
+</p>
+
+<!-- FAQ ACCORDION — vanilla JS only -->
+<script>
+  function toggleFaq(btn) {
+    var answer = btn.nextElementSibling;
+    var isOpen = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', !isOpen);
+    if (isOpen) {
+      answer.classList.remove('open');
+    } else {
+      answer.classList.add('open');
+    }
+  }
+</script>
 
 </body>
 </html>
