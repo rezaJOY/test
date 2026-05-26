@@ -41,7 +41,8 @@
 <!-- Google Fonts: Nunito only -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap"></noscript>
 
 <!-- Google Analytics 4 — carried over exactly -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZMTRW86BYT"></script>
@@ -657,12 +658,14 @@ footer {
 </head>
 <body>
 <div class="wrap">
+<main>
 
 <!-- ===================== NAV ===================== -->
 <nav class="nav">
   <img src="logo.png" alt="Ghoreo" class="nav-logo">
   <a href="https://forms.gle/ze1gAAhcYgfkKxPQ6" class="btn-nav">Request a Demo</a>
 </nav>
+<main>
 
 <!-- ===================== HERO ===================== -->
 <header class="hero">
@@ -913,6 +916,7 @@ footer {
   <p class="cta-note">No payment required &middot; Built for residential hotels in Dhaka, Bangladesh &middot; Cancel anytime</p>
 </section>
 
+</main>
 <!-- ===================== FOOTER ===================== -->
 <footer>
   <div class="footer-info">
@@ -923,6 +927,7 @@ footer {
   <img src="logo.png" alt="Ghoreo" class="footer-logo">
 </footer>
 
+</main>
 </div><!-- .wrap -->
 
 
