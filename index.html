@@ -503,6 +503,33 @@ footer {
   .hero-sub { font-size: 15px !important; }
   .section-title { font-size: 22px !important; }
 }
+
+  /* ============================================================
+   🔥 FIX: VERTICAL ALIGNMENT & REDUCE EXCESS SPACING
+   ============================================================ */
+
+/* 1. Fix the logo alignment so it matches the content below */
+.nav {
+  padding: 0 24px !important; 
+}
+@media (min-width: 640px) {
+  .nav {
+    padding: 0 40px !important;
+  }
+}
+
+/* 2. Reduce the huge gap between sections */
+.product-section, .story-section, .features-section, 
+.compliance-section, .testimonial-section, 
+.bridge-section, .faq-section, .cta-section {
+  padding: 32px 0 !important;
+  gap: 24px !important;
+}
+
+.hero {
+  padding: 60px 0 40px !important;
+  gap: 32px !important;
+}
 </style>
 </head>
 <body>
