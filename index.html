@@ -268,6 +268,46 @@
 }
 </script>
 
+/* ===== MOBILE OPTIMIZATION FIXES ===== */
+@media (max-width: 640px) {
+  /* Fix 1: Make mobile mockup bigger */
+  .hero-img-wrap {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 6px;
+  }
+  .hero-img-wrap img {
+    max-width: 100% !important;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Fix 2: Reduce vertical spacing between sections */
+  .hero {
+    padding: 40px 0 24px;
+    gap: 24px;
+  }
+  .product-section, .story-section, .features-section, 
+  .compliance-section, .testimonial-section, 
+  .bridge-section, .faq-section, .cta-section {
+    padding: 32px 0;
+  }
+  
+  /* Fix 3: Tighter Grid & Fonts */
+  .features-grid {
+    gap: 12px;
+  }
+  .hero-h1 {
+    font-size: 32px;
+  }
+  .hero-sub {
+    font-size: 16px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+}
+  
 <style>
 /* ============================================================
    RESET & BASE
@@ -913,7 +953,7 @@ footer {
   </div>
 
   <div class="hero-img-wrap">
-    <img src="mobileUI.png" alt="Ghoreo mobile dashboard showing HBMS compliance guest verification status" style="max-width:220px;border-radius:18px;" width="220" height="440" fetchpriority="high">
+    <img src="mobileUI.png" alt="Ghoreo mobile dashboard..." style="width:100%; border-radius:18px;" width="220" height="440" fetchpriority="high">
   </div>
 </header>
 
